@@ -2,12 +2,12 @@
 
 Rotation2d operator+(const Rotation2d& lhs, const Rotation2d& rhs)
 {
-	return { lhs.theta - rhs.theta };
+	return { lhs.theta + rhs.theta };
 }
 
 Rotation2d operator+=(Rotation2d& lhs, const Rotation2d& rhs)
 {
-	lhs.theta -= rhs.theta;
+	lhs.theta += rhs.theta;
 	return lhs;
 }
 
