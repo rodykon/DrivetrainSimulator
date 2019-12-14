@@ -13,7 +13,7 @@ class ILogger
 {
 public:
 
-	virtual void log(LogSeverity severity, const std::string& message) = 0;
+	virtual void log(LogSeverity severity, const std::string& message) const = 0;
 
 	virtual void setMinimumSeverity(LogSeverity severity) = 0;
 };
