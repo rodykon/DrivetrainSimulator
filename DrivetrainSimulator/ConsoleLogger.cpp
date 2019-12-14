@@ -1,6 +1,6 @@
 #include "ConsoleLogger.h"
 
-void ConsoleLogger::log(LogSeverity severity, std::string message)
+void ConsoleLogger::log(LogSeverity severity, const std::string& message)
 {
 	if (severity >= minimumSeverity) {
 		std::cout << severity << ": " << message.data() << std::endl;
