@@ -7,7 +7,7 @@ class DCMotor :
 {
 public:
 
-	DCMotor(ILogger& logger, double vIntercept, double kv, double ka) : mLogger(mLogger), mVIntercept(vIntercept), mKv(kv), mKa(ka) {}
+	DCMotor(ILogger& logger, double vIntercept, double kv, double ka) : mLogger(logger), mVIntercept(vIntercept), mKv(kv), mKa(ka), mVelocity(0), mVoltage(0) {}
 
 	virtual ~DCMotor() = default;
 

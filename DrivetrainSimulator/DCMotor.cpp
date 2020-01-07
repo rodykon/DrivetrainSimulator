@@ -11,6 +11,7 @@ double DCMotor::getVelocity(double dt)
 {
 	double acceleration = (mVoltage - mVIntercept - mKv * mVelocity) / mKa;
 	mVelocity += acceleration * dt;
+	mLogger.log(LogSeverity::INFO, "Calculated velocity of " + std::to_string(mVelocity));
 	return mVelocity;
 }
 
